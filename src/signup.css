@@ -1,0 +1,24 @@
+#sign_up {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form_field {
+  width: 20vw;
+}
+
+.button {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 4%;
+  margin-bottom: 3vh;
+  text-align: center;
+  background-color: coral;
+}
+
+.button:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.08);
+}
