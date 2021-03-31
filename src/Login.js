@@ -3,6 +3,8 @@ import { Link, useHistory } from "react-router-dom";
 import "../src/all.css";
 import { useAuth } from "./Context";
 
+//very similar to signup component - see comments in that file
+
 export default function Login() {
   const emailRef = useRef();
   const passwordRef = useRef();
@@ -29,7 +31,7 @@ export default function Login() {
     <div>
       <div id="sign_up">
         <h2> Login </h2>
-        {error && <alert id="alert">{error}</alert>}
+        {error && <div className="error">{error}</div>}
         <form onSubmit={handleSubmit}>
           <br />
           <label>

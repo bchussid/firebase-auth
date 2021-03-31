@@ -7,6 +7,9 @@ import Login from "./Login";
 import PrivateRoute from "./PrivateRoute";
 import ForgotPassword from "./ForgotPassword";
 
+//context here has to wrap everything that needs information from the 'value' prop
+//this is the object in Context.js that contains our basic function definitions
+
 function App() {
   return (
     <Router>
