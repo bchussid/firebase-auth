@@ -1,6 +1,7 @@
 import React from "react";
 import { useAuth } from "./Context";
 import { useHistory } from "react-router-dom";
+import '../src/all.css'
 
 export default function Dashboard() {
   const { loggedUser, logout } = useAuth();
@@ -13,12 +14,15 @@ export default function Dashboard() {
 
   return (
     <div>
-      <h1 style={{ marginLeft: "40%" }}> Dashboard</h1>
-      <h3>Email: {loggedUser.email}</h3>
+      <div id='dash_container'>
+      <h1> Dashboard</h1>
       <hr />
-      <button style={{ height: "50vh", width: "50vw" }} onClick={handleLogout}>
-        Log Out
+      <h3>Email: {loggedUser.email}</h3>
+      <br />
+      <button className='button' onClick={handleLogout}>
+        LOG OUT BUTTON
       </button>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import "../src/signup.css";
+import "../src/all.css";
 import { useAuth } from "./Context";
 
 export default function Signup() {
