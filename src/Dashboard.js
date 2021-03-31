@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth } from "./Context";
 import { useHistory } from "react-router-dom";
-import '../src/all.css'
+import "../src/all.css";
 
 export default function Dashboard() {
   const { loggedUser, logout } = useAuth();
@@ -14,14 +14,14 @@ export default function Dashboard() {
 
   return (
     <div>
-      <div id='dash_container'>
-      <h1> Dashboard</h1>
-      <hr />
-      <h3>Email: {loggedUser.email}</h3>
-      <br />
-      <button className='button' onClick={handleLogout}>
-        LOG OUT BUTTON
-      </button>
+      <div id="dash_container">
+        <h1> Dashboard</h1>
+        <hr />
+        <h3>Email: {loggedUser.email}</h3>
+        <br />
+        <button className="button" onClick={handleLogout}>
+          LOG OUT BUTTON
+        </button>
       </div>
     </div>
   );
